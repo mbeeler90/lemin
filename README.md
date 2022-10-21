@@ -14,7 +14,7 @@ We use the Edmonds-Karp algorithm with the following specifications to solve the
 These conditions ensure that there is never more than one ant in a room at any given time.
 
 The algorithm then finds the best solution:
-1. Find the shortest aughmented path.
+1. Find the shortest path based on a breadth first search.
 2. If no valid path was found, exit algorithm, otherwise continue with step 3.
 3. Change capacity of connections and reverse connections along the augmented path form 1 to 0 and 1 to 0 respectively.
 4. Caluculate the number of turns required to move all ants from the start to the end based on current combination of paths.
